@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="JS/codeLoad.js"></script>
+    <script defer src="JS/resize.js"></script>
+    <script defer src="JS/color.js"></script>
+    <script defer src="JS/goto.js"></script>
+
+    <script defer async>
+      document.addEventListener("DOMContentLoaded", function () {
+        goto("example.html");
+      });
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <h2 class="text-shadow tektur text-logo">mystyle.css</h2>
+      <input type="text" class="search" placeholder="Search input example" />
+      <h5>Example2</h5>
+    </div>
+    <div class="content">
+      <div class="left" id="left-div">
+        <div class="div-button" onclick="goto('/example.html')">
+          <i class="fa-solid fa-house primary-text-color"></i>
+          <h5></h5>
+          <h5 class="hide-on-screen-resize">Example</h5>
+        </div>
+        <div
+          class="div-button"
+          onclick="async function asyncGoto(){ await goto('/code.html'); codeLoad()}; asyncGoto()"
+        >
+          <i class="fa-solid fa-code primary-text-color"></i>
+          <h5></h5>
+          <h5 class="hide-on-screen-resize">Code</h5>
+        </div>
+        <div class="div-button" onclick="goto('/links.html')">
+          <i class="fa-solid fa-code-compare primary-text-color"></i>
+          <h5></h5>
+          <h5 class="hide-on-screen-resize">Links</h5>
+        </div>
+        <div class="color-picker-container">
+          <h5>Select primary color:</h5>
+          <!-- Элемент для выбора цвета -->
+          <div class="line">
+            <input
+              type="color"
+              id="color-picker"
+              class="color-picker-button"
+              value="#ff0000"
+              placeholder="Select primary color"
+            />
+
+            <!-- Элемент для отображения выбранного цвета -->
+            <div
+              class="selected-color"
+              id="selected-color"
+              style="background-color: #ff0000"
+            ></div>
+
+            <!-- Элемент для отображения выбранного цветового кода -->
+            <input
+              type="text"
+              class="input"
+              id="color-code"
+              value="#ff0000"
+              readonly
+            />
+          </div>
+        </div>
+      </div>
+      <div class="frame" id="frame"></div>
+    </div>
+  </body>
+</html>
