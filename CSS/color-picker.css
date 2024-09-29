@@ -1,0 +1,32 @@
+.color-picker-container {
+  margin: 1vw;
+  padding: 10px;
+  border: 0px solid #ccc;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+/* Стили для кнопки выбора цвета */
+.color-picker-button {
+  padding: 1.4vw;
+  margin-right: 10px;
+  border: 1px solid var(--primary);
+  border-radius: 30px;
+  cursor: pointer;
+  background: transparent;
+
+  transition: all var(--transition-time) ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 6px var(--primary);
+  }
+}
+
+/* Стили для отображения выбранного цвета */
+.selected-color {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: none;
+}

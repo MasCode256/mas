@@ -1,1 +1,51 @@
+@import url("root.css");
 
+@import url("color-picker.css");
+@import url("scrollbar.css");
+@import url("shadows.css");
+@import url("buttons.css");
+@import url("input.css");
+@import url("font.css");
+@import url("div.css");
+
+body {
+  background: var(--bg);
+  color: var(--txt-color);
+  /*text-shadow: 0 0 6px #fff;*/
+
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.primary-text-color {
+  color: var(--primary);
+}
+
+.transition {
+  transition: all var(--transition-time);
+}
+
+.text-logo {
+  zoom: 1.1;
+
+  color: var(--primary);
+  text-shadow: 0 0 10px var(--primary);
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.empty {
+  color: transparent;
+  border: none;
+  background: transparent;
+}

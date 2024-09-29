@@ -1,0 +1,91 @@
+.search {
+  /* Размеры и границы */
+  width: 30%; /* Ширина поля */
+  padding: 0.8vw; /* Поля вокруг текста */
+  margin: 1vw 0; /* Отступы вокруг поля */
+  border: 0.03vw solid #555; /* Черта вокруг поля */
+  border-radius: 20px; /* Закругленные углы */
+
+  /* Шрифт и текст */
+  font-size: 14px; /* Размер шрифта */
+  font-family: "Comfortaa";
+  color: var(--txt-color); /* Цвет текста */
+
+  /* Фон */
+  background-color: var(--item-bg); /* Цвет фона */
+  transition: all 0.3s ease-in-out;
+
+  /* Псевдоклассы для состояний */
+  &:hover:focus {
+    outline: none; /* Убираем стандартную рамку при фокусе */
+    border-color: var(--primary); /* Изменяем цвет границы при фокусе */
+    box-shadow: 0 0 9px var(--primary); /* Тень при фокусе */
+  }
+
+  &:focus {
+    outline: none; /* Убираем стандартную рамку при фокусе */
+    border-color: var(--primary); /* Изменяем цвет границы при фокусе */
+    box-shadow: 0 0 8px var(--primary); /* Тень при фокусе */
+  }
+
+  &:hover {
+    outline: none; /* Убираем стандартную рамку при фокусе */
+    border-color: var(--primary); /* Изменяем цвет границы при фокусе */
+    box-shadow: 0 0 6px var(--primary); /* Тень при фокусе */
+
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  /* Дополнительные стили для неактивного состояния */
+  &:disabled {
+    background-color: #f4f4f4; /* Цвет фона для неактивного поля */
+    color: var(--txt-secondary-color); /* Цвет текста для неактивного поля */
+    border-color: #ddd; /* Цвет границы для неактивного поля */
+  }
+}
+
+.input {
+  /* Размеры и границы */
+  width: 33%; /* Ширина поля */
+  padding: 0.9vw; /* Поля вокруг текста */
+  margin: 1vw 0; /* Отступы вокруг поля */
+  border: 0.03vw solid #555; /* Черта вокруг поля */
+  border-radius: 20px; /* Закругленные углы */
+
+  /* Шрифт и текст */
+  font-size: 14px; /* Размер шрифта */
+  font-family: "Comfortaa";
+  color: var(--txt-color); /* Цвет текста */
+
+  /* Фон */
+  background-color: var(--item-bg); /* Цвет фона */
+  transition: all 0.3s ease-in-out;
+
+  /* Псевдоклассы для состояний */
+  &:hover:focus {
+    outline: none; /* Убираем стандартную рамку при фокусе */
+    border-color: var(--primary); /* Изменяем цвет границы при фокусе */
+    box-shadow: 0 0 9px var(--primary); /* Тень при фокусе */
+  }
+
+  &:focus {
+    outline: none; /* Убираем стандартную рамку при фокусе */
+    border-color: var(--primary); /* Изменяем цвет границы при фокусе */
+    box-shadow: 0 0 8px var(--primary); /* Тень при фокусе */
+  }
+
+  &:hover {
+    outline: none; /* Убираем стандартную рамку при фокусе */
+    border-color: var(--primary); /* Изменяем цвет границы при фокусе */
+    box-shadow: 0 0 6px var(--primary); /* Тень при фокусе */
+
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  /* Дополнительные стили для неактивного состояния */
+  &:disabled {
+    background-color: #f4f4f4; /* Цвет фона для неактивного поля */
+    color: var(--txt-secondary-color); /* Цвет текста для неактивного поля */
+    border-color: #ddd; /* Цвет границы для неактивного поля */
+  }
+}

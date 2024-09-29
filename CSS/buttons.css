@@ -1,0 +1,76 @@
+.div-button {
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  padding-left: 1vw;
+  transform: scaleY(-10vw);
+
+  background: transparent;
+  cursor: pointer;
+
+  transition: all var(--transition-time);
+
+  border-radius: 12px;
+}
+
+.div-button :last-child {
+  margin-left: 2vw;
+}
+
+.div-button i {
+  width: 1.2vw;
+}
+
+.div-button:hover {
+  background: var(--item-hover);
+}
+
+.primary {
+  background: var(--primary);
+  border-radius: var(--item-border-radius);
+  border: none;
+  padding: 1vw;
+  margin: 0.5vw;
+
+  font-family: "Comfortaa";
+  font-weight: 1000;
+  color: var(--txt-color);
+
+  transition: all var(--transition-time) ease-in-out;
+
+  cursor: pointer;
+
+  &:hover {
+    background: transparent;
+    color: var(--primary);
+    text-shadow: 0 0 12px var(--primary), 0 0 6px var(--primary);
+
+    border-color: var(--primary);
+    border-width: 2px;
+  }
+}
+
+.secondary {
+  background: var(--item-bg);
+  border-radius: var(--item-border-radius);
+  border: none;
+  padding: 1vw;
+  color: var(--txt-color);
+
+  font-family: "Comfortaa";
+  font-weight: 800;
+
+  transition: all var(--transition-time) ease-in-out;
+
+  cursor: pointer;
+
+  &:hover {
+    background: transparent;
+    color: var(--primary);
+    text-shadow: 0 0 12px var(--primary), 0 0 6px var(--primary);
+
+    border-color: var(--primary);
+    border-width: 2px;
+  }
+}
